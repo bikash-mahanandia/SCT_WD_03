@@ -8,7 +8,7 @@ This game allows you to play in **2-player mode** or against the **computer**, a
 
 ## 🚀 Live Demo
 
-🔗 [View Live Project](https://your-live-link.com) 
+🔗 [View Live Project]([https://your-live-link.com](https://bikash-mahanandia.github.io/SCT_WD_03/)) 
 
 ---
 
@@ -80,8 +80,8 @@ This project is open-source and free to use under the [MIT License](LICENSE).
 
 ## 🔗 Connect With Me
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/your-profile)
-- 💻 [Portfolio](https://yourportfolio.com)
+- 💼 [LinkedIn]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/bikash-mahanandia-150145349/))
+- 💻 [Portfolio]([https://yourportfolio.com](https://github.com/bikash-mahanandia))
 
 ---
 
