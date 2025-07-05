@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe - 3D Gradient UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+  <div class="container">
+    <h1>Tic-Tac-Toe</h1>
+
+    <!-- Toggle Button -->
+    <div class="theme-switch">
+      <label class="switch">
+        <input type="checkbox" id="toggleTheme">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="controls">
+      <select id="mode">
+        <option value="human">2 Player</option>
+        <option value="computer">Vs Computer</option>
+      </select>
+      <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div class="board" id="board"></div>
+    <div class="status" id="status"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
