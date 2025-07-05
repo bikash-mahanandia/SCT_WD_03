@@ -14,7 +14,7 @@ This game allows you to play in **2-player mode** or against the **computer**, a
 
 ## 🖼️ Preview
 
-![Game Screenshot](./Screenshot 2025-07-05 141742.png)
+![Game Screenshot](./Screenshot%202025-07-05%20141742.png)
 
 ---
 
@@ -66,7 +66,7 @@ Pull requests are welcome! If you have suggestions or improvements, feel free to
 
 ## 📷 Screenshot
 
-![Tic Tac Toe Screenshot](./Screenshot.png)
+![Tic Tac Toe Screenshot](./Screenshot%202025-07-05%20141742.png)
 
 > Replace `Screenshot.png` with the actual screenshot file of your game.
 
