@@ -1,0 +1,178 @@
+    /* ------------- BASE STYLES ------------- */
+    :root {
+      --bg-light: #f2f3f7;
+      --bg-dark: #111827;
+      --text-light: #111;
+      --text-dark: #fff;
+      --cell-light: rgba(255, 255, 255, 0.5);
+      --cell-dark: rgba(255, 255, 255, 0.05);
+      --border-light: #ddd;
+      --border-dark: #444;
+      --glass: blur(10px) saturate(150%);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      transition: background 0.4s ease, color 0.3s ease;
+      overflow-x: hidden;
+    }
+
+    body.light {
+      background: linear-gradient(135deg, #ffffff, #e6f0ff);
+      color: var(--text-light);
+    }
+
+    body.dark {
+      background: linear-gradient(145deg, #0f0f1a, #1c1c2e);
+      color: var(--text-dark);
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    /* ------------- TOGGLE SWITCH ------------- */
+    .theme-switch {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .switch {
+      position: relative;
+      width: 60px;
+      height: 30px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0;
+      right: 0; bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 30px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 24px;
+      width: 24px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(30px);
+    }
+
+    /* ------------- GAME BOARD ------------- */
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 15px;
+      justify-content: center;
+      margin: 30px auto;
+    }
+
+    .cell {
+      width: 100px;
+      height: 100px;
+      font-size: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.3s, transform 0.2s;
+      backdrop-filter: var(--glass);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+
+    body.light .cell {
+      background: var(--cell-light);
+      border: 2px solid var(--border-light);
+      color: #111;
+    }
+
+    body.dark .cell {
+      background: var(--cell-dark);
+      border: 2px solid var(--border-dark);
+      color: #fff;
+    }
+
+    .cell:hover {
+      transform: scale(1.05);
+    }
+
+    .status {
+      font-size: 1.2rem;
+      margin-top: 15px;
+    }
+
+    /* ------------- CONTROLS ------------- */
+    .controls {
+      margin-top: 20px;
+    }
+
+    select, button {
+      padding: 10px 15px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+      margin: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    select {
+      background: #eee;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+    }
+
+    button:hover {
+      background-color: #005ecc;
+    }
+
+    @media (max-width: 500px) {
+      .board {
+        grid-template-columns: repeat(3, 80px);
+        gap: 10px;
+      }
+      .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+      }
+    }
