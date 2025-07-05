@@ -14,7 +14,7 @@ This game allows you to play in **2-player mode** or against the **computer**, a
 
 ## 🖼️ Preview
 
-![Game Screenshot](./Screenshot.png)
+![Game Screenshot](./Screenshot 2025-07-05 141742.png)
 
 ---
 
